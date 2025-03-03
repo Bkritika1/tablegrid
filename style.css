@@ -1,0 +1,150 @@
+.wraper{
+    /* background-color: rgb(89, 89, 126); */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+th,td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 15px;
+}
+thead{
+    background-color: black;
+    color: floralwhite;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+/* thead:last-child{
+    background-color: pink;
+} */
+ tbody tr:nth-child(even) {
+background-color: lightgray;
+}
+tbody tr:nth-child(odd){
+background-color: rgb(202, 196, 196);
+}
+.inputfiled{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 400px;
+}
+
+#filterinput, #Desirableinput{
+    border-radius: 2vw;
+    width: 200px;
+    height: 5vh;
+    text-align: center;
+    border: 1px solid;
+    font-size: 15px;
+    font-weight: 600;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#paginatedd{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
+#paginatedd li{
+    margin:  0 5px;
+}
+.page-btn:hover{
+    background-color: grey;
+}
+
+#prev-btn, #next-btn{
+  padding: 10px;
+  border: 1px solid rgb(175, 169, 169);
+  border-radius: 5px;
+}
+.addbtn{
+    width: 100px;
+    background-color: brown;
+    color: whitesmoke;
+  padding: 15px;
+     align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 15px;
+ }
+
+ .editBtn{
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color:  rgb(33 176 33);
+  
+ }
+ .deleteBtn{
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color:rgb(195, 23, 23)
+ }
+ .editBtn:hover{
+    background-color: rgba(0, 128, 0, 0.73);
+    color: whitesmoke;
+   
+ }
+ .deleteBtn:hover{
+    background-color: rgb(195, 23, 23);
+    color: whitesmoke;
+ }
+ /* .editBtn:click:closes tr{
+border: 1px solid black;
+ } */
+
+
+
+/* 
+ th {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+   */
+
+   .sort-buttons{
+    display: flex; flex-direction: column; align-items: center;
+    position: absolute;
+    top: 5px;
+    right:  10px;
+    /* background-color: red; */
+   }
+   .sortBtn{
+    margin:  2px 0px;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.621);
+    background-color: black;
+    border: none;
+    color: white;
+   }
+   th{
+    position: relative;
+   }
+
+   .trrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+   }
+
+   .addbtn{
+    border: none;
+    padding: 5px;
+   }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ <div class="wraper">
+   <button class="addbtn"> Add Row</button>
+    <div class="inputfiled">
+        <select id="Desirableinput">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+        </select>
+        <input type="text" id="filterinput" placeholder="search by names $ age">
+    </div>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>
+                  ID
+                  <div class="sort-buttons">
+                    <button id="sortAscBtnId" class="sortBtn">↑</button>
+                    <button id="sortDescBtnId" class="sortBtn">↓</button>
+                </div>
+                </th>
+                <th>
+                  Full Name
+                 <div class="sort-buttons">
+                  <button id="sortAscBtnFullname" class="sortBtn">↑</button>
+                  <button id="sortDescBtnFullname" class="sortBtn">↓</button>
+                 </div>
+
+                </th>
+                <th>
+                  Email
+                  <div class="sort-buttons">
+                    <button id="sortAscBtnEmail" class="sortBtn">↑</button>
+                    <button id="sortDescBtnEmail" class="sortBtn">↓</button>
+                  </div>
+                </th>
+                <th>
+                    Department
+                    <div class="sort-buttons">
+                    <button id="sortAscBtnDepartment" class="sortBtn">↑</button>
+                    <button id="sortDescBtnDepartment" class="sortBtn">↓</button>
+                    </div>
+                  </th>
+                  <th>
+                    Age
+                    <div class="sort-buttons">
+                      <button id="sortAscBtnAge" class="sortBtn">↑</button>
+                    <button id="sortDescBtnAge" class="sortBtn">↓</button>
+                    </div>
+                  </th>
+                  <th>
+                    City
+                    <div class="sort-buttons">
+                    <button id="sortAscBtnCity" class="sortBtn">↑</button>
+                    <button id="sortDescBtnCity" class="sortBtn">↓</button>
+                    </div>
+                  </th>
+                  <th>Action</th>
+                </tr>
+               
+        </thead>
+       
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+   <div id="pagination"></div>
+ <script src="empl.js"></script>
+</body>
+</html>
