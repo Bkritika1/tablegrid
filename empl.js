@@ -76,16 +76,41 @@ var data = [
     if (event.target.classList.contains('editBtn')){
         var row = event.target.closest('tr');
         var cells = row.querySelectorAll('td');
-       if(event.target.innerText === 'Edit'){
-        cells.forEach(function(cell){
-            // console.log(cell);
-            cell.contentEditable = true;
-        });
-        event.target.innerText = 'save';
-       }else{
-           cells.forEach(function(cell){
-            cell.contentEditable = false;
-           });
+        var currentRowData = editableobj[0]; // get the object for this row
+
+            if(event.target.innerText === 'Edit'){
+                
+                cells.forEach(function(cell){
+                    cell.contentEditable = true;
+                });
+                event.target.innerText = 'Save';
+            } else {
+                
+                cells.forEach(function(cell, index){
+                    if (index === 1) { 
+                        currentRowData.Fullname = cell.innerText;
+                    } else if (index === 2) { 
+                        currentRowData.Email = cell.innerText;
+                    } else if (index === 3) { 
+                        currentRowData.Department = cell.innerText;
+                    } else if (index === 4) { 
+                        currentRowData.age = parseInt(cell.innerText);
+                    } else if (index === 5) { 
+                        currentRowData.city = cell.innerText;
+                    }
+                    cell.contentEditable = false; 
+                });
+
+    //    if(event.target.innerText === 'Edit'){
+    //     cells.forEach(function(cell){
+    //         // console.log(cell);
+    //         cell.contentEditable = true;
+    //     });
+    //     event.target.innerText = 'save';
+    //    }else{
+    //        cells.forEach(function(cell){
+    //         cell.contentEditable = false;
+    //        });
            event.target.innerText = 'Edit';
        }
     }
